@@ -12,13 +12,14 @@
         <div class="container">
             <nav>
                 <img src="logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Devloper</p>
@@ -53,16 +54,16 @@
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Jun 2024 - Jul 2024</span><br>Web Devlopment Intern At CodeAlpha</li>
-                                <li><span>Mar 2024 - Apr 2024</span><br>Web Devlopment Intern At Prodigy</li>
-                                <li><span>Jan 2024 - Feb 2024</span><br>Web Devlopment Intern At CodSoft</li>
+                                <li><span>Jun 2024 - Jul 2024</span><br>Web Devlopment Intern At XXXXX</li>
+                                <li><span>Mar 2024 - Apr 2024</span><br>Web Devlopment Intern At XXXXX</li>
+                                <li><span>Jan 2024 - Feb 2024</span><br>Web Devlopment Intern At XXXXX</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>Manipal University Jaipur</span><br>B-Tech In Information Technology<br>CGPA(till now) - 8.03</li>
-                                <li><span>Sanskar Public School</span><br>12th<br>79.6%</li>
-                                <li><span>Kendriya Vidyalaya No. 2</span><br>10th<br>85.6%</li>
+                                <li><span>XXXXXXXXXXXXXXXX</span><br>B-Tech In Information Technology<br>CGPA(till now) - 8.03</li>
+                                <li><span>XXXXXXXXXXXXXXXX</span><br>12th<br>79.6%</li>
+                                <li><span>XXXXXXXXXXXXXXXX</span><br>10th<br>85.6%</li>
                             </ul>
                         </div> 
                 </div>
@@ -70,70 +71,70 @@
         </div>
     </div>
 
-    <!-- ------------ SERVICES -------------- -->>
+    <!-- ------------ PROJECTS -------------- -->>
 
     <div id="services">
         <div class="container">
-            <h1 class="sub-title">My Services</h1>
+            <h1 class="sub-title">My PROJECTS</h1>
             <div class="services-list">
                 <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
+                    <i class="fa-solid fa-plane"></i>
+                    <h2>Flight Management System</h2>
                     <p>Lorem ipsum dolor sit amet consectetur,
                          adipisicing elit. Autem, dolor.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-link"></i>
-                    <h2>Blockchain Devlopment</h2>
+                    <i class="fa-solid fa-calculator"></i>
+                    <h2>Calculater</h2>
                     <p>Lorem ipsum dolor sit amet consectetur,
                          adipisicing elit. Autem, dolor.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
-                    <i class="fa-solid fa-cloud"></i>
-                    <h2>Cloud Computing Devlopment</h2>
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Image Gallery</h2>
                     <p>Lorem ipsum dolor sit amet consectetur,
                          adipisicing elit. Autem, dolor.</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
 
-    <!-----------PORTFOLIO------------->
+    <!-----------CONTACT------------->
 
-    <div id="portfolio">
+    <div id="contact">
         <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <div class="layer">
-                        <h3>Flight Management System</h3>
-                        <p>Developed a comprehensive Flight Management System (FMS) using Html, CSS, Java Script, PHP, SVG and SQL.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9999999999</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <img src="project1.png">
+                    <a href="YOUR RESUME" download class="btn btn2">Download Resume</a>
                 </div>
-                <div class="work">
-                    <div class="layer">
-                        <h3>Calculater</h3>
-                        <p>Developed a working Calculater using Html, CSS and Java Script.</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    <img src="project2.png">
-                </div>
-                <div class="work">
-                    <div class="layer">
-                        <h3>Image Gallery</h3>
-                        <p>Developed an image gallery to store some memorable moments of life</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    <img src="project3.png">
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
+        <div class="copyright">
+            <p>Copyright &#169 Tarun 2024</p>
+        </div>
     </div>
+
     <script>
 
         var tablinks = document.getElementsByClassName("tab-links");
@@ -148,6 +149,19 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
 
     </script>
