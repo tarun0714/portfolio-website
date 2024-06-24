@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/74760283b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Devloper</p>
+                <h1>Hi, I'm <span>Tarun Gupta</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Repellendus architecto esse cum fuga ipsum qui quaerat? 
+                        Veritatis provident voluptatem pariatur?</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick=" opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick=" opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI?UX</span><br>Designing Web/App interface</li>
+                                <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                                <li><span>Cloud Computing</span><br>Amazon Cloud Services</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Jun 2024 - Jul 2024</span><br>Web Devlopment Intern At CodeAlpha</li>
+                                <li><span>Mar 2024 - Apr 2024</span><br>Web Devlopment Intern At Prodigy</li>
+                                <li><span>Jan 2024 - Feb 2024</span><br>Web Devlopment Intern At CodSoft</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Manipal University Jaipur</span><br>B-Tech In Information Technology<br>CGPA(till now) - 8.03</li>
+                                <li><span>Sanskar Public School</span><br>12th<br>79.6%</li>
+                                <li><span>Kendriya Vidyalaya No. 2</span><br>10th<br>85.6%</li>
+                            </ul>
+                        </div> 
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <!-- ------------ SERVICES -------------- -->>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Autem, dolor.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <h2>Blockchain Devlopment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Autem, dolor.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Computing Devlopment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Autem, dolor.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------PORTFOLIO------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="layer">
+                        <h3>Flight Management System</h3>
+                        <p>Developed a comprehensive Flight Management System (FMS) using Html, CSS, Java Script, PHP, SVG and SQL.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <img src="project1.png">
+                </div>
+                <div class="work">
+                    <div class="layer">
+                        <h3>Calculater</h3>
+                        <p>Developed a working Calculater using Html, CSS and Java Script.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <img src="project2.png">
+                </div>
+                <div class="work">
+                    <div class="layer">
+                        <h3>Image Gallery</h3>
+                        <p>Developed an image gallery to store some memorable moments of life</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <img src="project3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
